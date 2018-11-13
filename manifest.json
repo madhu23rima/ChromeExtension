@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Save To Matter",
+  "description": "Save this web page to a matter",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "SaveToMatter.png",
+   "default_popup": "index.html"
+  },
+  "permissions": [
+     "tabs",
+     "storage",
+	 "pageCapture",
+     "downloads"
+   ],
+   "content_security_policy": "script-src ‘self’ ‘unsafe-eval’; object-src ‘self’",
+   "web_accessible_resources": [
+    "assets/css/*",
+    "assets/js/*",
+"assets/fonts/*"
+ ]
+}
